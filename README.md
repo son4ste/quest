@@ -4,10 +4,11 @@ A tool designed to automate Discord Missions using **Discord PTB** or **Discord 
 
 ## Features
 
-- **Accept All Missions:** Automatically accepts all available missions.
-- **Run All Missions Simultaneously:** All missions are processed at the same time instead of one by one.
-- **Individual Time Management:** Each mission respects its own required duration. For example, 15-minute missions still take 15 minutes, but all missions progress simultaneously.
-- **Video Missions:** Videos are played for approximately 1 second and then closed, allowing the mission to register as accepted.
+- **Video Mission Activation:** Open each available video mission, play it for approximately 1 second, and close it to register the mission.
+- **Accept All Missions:** After activating all video missions, manually accept the remaining missions.
+- **Simultaneous Execution:** All accepted 15-minute missions run simultaneously instead of one by one.
+- **Automatic Progress Tracking:** Tracks the progress of each mission independently.
+- **Background Execution:** Once the script is running, you only need to keep Discord open. You can continue using Discord normally while missions progress.
 
 ## Requirements
 
@@ -17,28 +18,38 @@ A tool designed to automate Discord Missions using **Discord PTB** or **Discord 
 ## How to Use
 
 1. Open **Discord PTB** or **Discord Canary**.
-2. Press `CTRL + SHIFT + I` to open Developer Tools.
-3. Navigate to the **Console** tab.
-4. Paste the provided code using `CTRL + V`.
-5. Discord may display a warning asking you to type:
+2. Open each available video mission.
+3. Play each video for approximately **1 second**, then close it.
+4. Repeat this process for every video mission.
+5. Accept all remaining available missions (15-minute missions).
+6. Press `CTRL + SHIFT + I` to open Developer Tools.
+7. Navigate to the **Console** tab.
+8. Paste the script using `CTRL + V`.
+9. If Discord displays a warning, type:
 
    ```text
    allow pasting
    ```
 
-6. Press `ENTER`.
-7. Paste the code again and execute it.
+10. Press `ENTER`.
+11. Paste the script again and execute it.
 
 ## How It Works
 
-The tool processes all available missions simultaneously, respecting the individual time requirements of each mission.
+After all missions have been activated and accepted, execute the script.
 
-For example:
-- A 15-minute mission takes 15 minutes to complete.
-- A 10-minute mission takes 10 minutes to complete.
-- Both missions progress simultaneously.
+All supported 15-minute missions begin progressing simultaneously. Each mission maintains its own progress and required duration.
 
-Video missions are handled separately by briefly playing the video for approximately one second before closing it.
+**Example:**
+
+If you have 5 missions of 15 minutes, all 5 progress at the same time rather than being completed one after another.
+
+Once the script is running:
+
+- Keep Discord PTB or Canary open.
+- You can continue using Discord normally.
+- Missions continue progressing simultaneously.
+- Each mission completes independently.
 
 ## Compatibility
 
